@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown_color_bg"
+    tools:context=".QuizGameActivity">
+
+    <TextView
+        android:id="@+id/quiz_game_activity_question_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/kinder_joe"
+        android:text="@string/question"
+        android:textColor="@color/orange_dark"
+        android:textSize="42sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quiz_game_activity_count_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/kinder_joe"
+        android:text="@string/round_0"
+        android:textColor="@color/orange_dark"
+        android:textSize="42sp"
+        app:layout_constraintStart_toEndOf="@+id/quiz_game_activity_question_TV"
+        app:layout_constraintTop_toTopOf="@+id/quiz_game_activity_question_TV" />
+
+    <ImageView
+        android:id="@+id/quiz_game_activity_food_Image"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/food_picture"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/quiz_game_activity_choice1_Button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/answer"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_game_activity_choice2_Button"
+        app:layout_constraintEnd_toEndOf="@+id/quiz_game_activity_food_Image"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/quiz_game_activity_food_Image"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_game_activity_food_Image"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/quiz_game_activity_choice2_Button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/answer"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_game_activity_choice3_Button"
+        app:layout_constraintEnd_toEndOf="@+id/quiz_game_activity_choice1_Button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/quiz_game_activity_choice1_Button"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_game_activity_choice1_Button" />
+
+    <Button
+        android:id="@+id/quiz_game_activity_choice3_Button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/answer"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_game_activity_choice4_Button"
+        app:layout_constraintEnd_toEndOf="@+id/quiz_game_activity_choice2_Button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/quiz_game_activity_choice2_Button"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_game_activity_choice2_Button" />
+
+    <Button
+        android:id="@+id/quiz_game_activity_choice4_Button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/answer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/quiz_game_activity_choice3_Button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/quiz_game_activity_choice3_Button"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_game_activity_choice3_Button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
